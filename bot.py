@@ -22,7 +22,7 @@ async def on_ready():
 
 @bot.command()
 async def hello(ctx):
-    await ctx.send(f'Hola, soy tu papa digo un bot {bot.user}!')
+    await ctx.send(f'Hola, soy tu papa digo {bot.user}!')
 
 @bot.command()
 async def heh(ctx, count_heh = 20):
@@ -34,7 +34,7 @@ async def bye(ctx):
     
 @bot.command()
 async def psw(ctx, longitud= 8):
-    await ctx.send(f'Tu contraseña hiper ultra mega giga chad y segura es: {gen_pass(longitud)}')
+    await ctx.send(f'ten una contraseña segura! para q no te roben tu cuenta cuando te metas a sitios raritos: {gen_pass(longitud)}')
 
 @bot.command()
 async def add(ctx, left: int, right: int):
